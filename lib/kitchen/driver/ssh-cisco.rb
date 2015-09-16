@@ -3,7 +3,7 @@ require 'kitchen/driver/ssh_base'
 
 module Kitchen
   module Driver
-    class Ssh2 < SSHBase
+    class SshCisco < SSHBase
 
       default_config :ssh_command_prefix, nil
 
@@ -69,7 +69,7 @@ module Kitchen
           run_remote(command,conn)
         end
       end
-      
+
       # Executes a remote command over SSH.
       #
       # @param command [String] remove command to run
@@ -110,7 +110,7 @@ module Kitchen
         debug("ssh:destroy '#{state[:hostname]}'")
       end
 
-      
+
     end
   end
 end
