@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.authors       = ["Neill Turner","Carl Perry"]
   s.email         = ["neillwturner@gmail.com","partnereng@chef.io"]
   s.homepage      = "https://github.com/chef-partners/kitchen-ssh-cisco"
-  s.add_dependency('minitar', '~> 0.5')
+  s.add_dependency('minitar', '~> 0.6')
   s.summary       = "ssh driver for test-kitchen for Linux based Cisco platform with an ip address"
   candidates = Dir.glob("{lib}/**/*") +  ['README.md', 'LICENSE.txt', 'kitchen-ssh-cisco.gemspec']
   s.files = candidates.sort
